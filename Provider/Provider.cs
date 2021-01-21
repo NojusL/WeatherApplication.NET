@@ -27,9 +27,6 @@ namespace Provider
         string GetSelectedForecast(string city, int dayparameter, string apiParameter);
 
         string GetCurrentForecast(string city, string apiParameter);
-
-        List<String> GetSuggestedCityCollection(string city);
-
         
     }
 
@@ -82,33 +79,6 @@ namespace Provider
         }
 
 
-        public List<String> GetSuggestedCityCollection(string city)
-        {
-            string uri = string.Format("http://api.weatherapi.com/v1/search.xml?key=" + apikey + "&q=" + city);
-            List<string> parameterresponse = new List<string>();
-            using (HttpClient client = new HttpClient())
-            {
-
-                HttpResponseMessage response = client.GetAsync(uri).Result;
-
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    XDocument xdoc = XDocument.Parse(response.Content.ReadAsStringAsync().Result);
-
-
-                    foreach (var npc in xdoc.Descendants("geo"))
-                    {
-                        string currenttempResponse = (string)npc.Descendants("name").FirstOrDefault();
-                        parameterresponse.Add(currenttempResponse);
-                    }
-                }
-
-            }
-
-            return parameterresponse;
-
-
-        }
 
         public Bitmap GetCurrentIcon(string city)
         {

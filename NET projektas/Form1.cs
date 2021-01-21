@@ -315,24 +315,6 @@ namespace NET_projektas
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            var prov = new Provider.Provider();
-
-            AutoCompleteStringCollection col = new AutoCompleteStringCollection();
-
-            foreach (var suggestion in prov.GetSuggestedCityCollection(city))
-            {
-                col.Add(suggestion);
-            }
-
-            txtCity.AutoCompleteCustomSource = col;
-            txtCity.Focus();
-            
-
-
-        }
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -493,6 +475,11 @@ namespace NET_projektas
         }
 
         private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
