@@ -39,6 +39,43 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.HourLabel21 = new System.Windows.Forms.Label();
+            this.HourLabel18 = new System.Windows.Forms.Label();
+            this.HourLabel15 = new System.Windows.Forms.Label();
+            this.HourLabel12 = new System.Windows.Forms.Label();
+            this.HourLabel9 = new System.Windows.Forms.Label();
+            this.HourLabel6 = new System.Windows.Forms.Label();
+            this.HourLabel3 = new System.Windows.Forms.Label();
+            this.HourLabel0 = new System.Windows.Forms.Label();
+            this.pictureBoxHour21 = new System.Windows.Forms.PictureBox();
+            this.Hour21 = new System.Windows.Forms.Button();
+            this.pictureBoxHour18 = new System.Windows.Forms.PictureBox();
+            this.Hour18 = new System.Windows.Forms.Button();
+            this.pictureBoxHour15 = new System.Windows.Forms.PictureBox();
+            this.Hour15 = new System.Windows.Forms.Button();
+            this.pictureBoxHour12 = new System.Windows.Forms.PictureBox();
+            this.Hour12 = new System.Windows.Forms.Button();
+            this.pictureBoxHour9 = new System.Windows.Forms.PictureBox();
+            this.Hour9 = new System.Windows.Forms.Button();
+            this.pictureBoxHour6 = new System.Windows.Forms.PictureBox();
+            this.Hour6 = new System.Windows.Forms.Button();
+            this.pictureBoxHour3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHour0 = new System.Windows.Forms.PictureBox();
+            this.Hour3 = new System.Windows.Forms.Button();
+            this.Hour0 = new System.Windows.Forms.Button();
+            this.panelhourly = new System.Windows.Forms.Panel();
+            this.Temp3 = new System.Windows.Forms.Label();
+            this.pictureBoxThird = new System.Windows.Forms.PictureBox();
+            this.dayboxThird = new System.Windows.Forms.Button();
+            this.Temp2 = new System.Windows.Forms.Label();
+            this.pictureBoxSecond = new System.Windows.Forms.PictureBox();
+            this.dayboxSecond = new System.Windows.Forms.Button();
+            this.Temp1 = new System.Windows.Forms.Label();
+            this.pictureBoxFirst = new System.Windows.Forms.PictureBox();
+            this.dayboxFirst = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtCurrentTemp = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.windspeed = new System.Windows.Forms.Label();
             this.percipitation = new System.Windows.Forms.Label();
             this.humidity = new System.Windows.Forms.Label();
@@ -58,31 +95,24 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtCurrentTemp = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dayboxFirst = new System.Windows.Forms.Button();
-            this.pictureBoxFirst = new System.Windows.Forms.PictureBox();
-            this.Temp1 = new System.Windows.Forms.Label();
-            this.dayboxSecond = new System.Windows.Forms.Button();
-            this.pictureBoxSecond = new System.Windows.Forms.PictureBox();
-            this.Temp2 = new System.Windows.Forms.Label();
-            this.dayboxThird = new System.Windows.Forms.Button();
-            this.pictureBoxThird = new System.Windows.Forms.PictureBox();
-            this.Temp3 = new System.Windows.Forms.Label();
-            this.panelhourly = new System.Windows.Forms.Panel();
-            this.tempreturebutton = new System.Windows.Forms.Button();
-            this.percipitationbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour0)).BeginInit();
+            this.panelhourly.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThird)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSecond)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.forecastdaypicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirst)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSecond)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThird)).BeginInit();
-            this.panelhourly.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtCityCountry
@@ -203,13 +233,541 @@
             this.panel1.BackgroundImage = global::NET_projektas.Properties.Resources.blue_blur;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panelhourly);
-            this.panel1.Controls.Add(this.percipitationbutton);
-            this.panel1.Controls.Add(this.tempreturebutton);
+            this.panel1.Controls.Add(this.HourLabel21);
+            this.panel1.Controls.Add(this.HourLabel18);
+            this.panel1.Controls.Add(this.HourLabel15);
+            this.panel1.Controls.Add(this.HourLabel12);
+            this.panel1.Controls.Add(this.HourLabel9);
+            this.panel1.Controls.Add(this.HourLabel6);
+            this.panel1.Controls.Add(this.HourLabel3);
+            this.panel1.Controls.Add(this.HourLabel0);
+            this.panel1.Controls.Add(this.pictureBoxHour21);
+            this.panel1.Controls.Add(this.Hour21);
+            this.panel1.Controls.Add(this.pictureBoxHour18);
+            this.panel1.Controls.Add(this.Hour18);
+            this.panel1.Controls.Add(this.pictureBoxHour15);
+            this.panel1.Controls.Add(this.Hour15);
+            this.panel1.Controls.Add(this.pictureBoxHour12);
+            this.panel1.Controls.Add(this.Hour12);
+            this.panel1.Controls.Add(this.pictureBoxHour9);
+            this.panel1.Controls.Add(this.Hour9);
+            this.panel1.Controls.Add(this.pictureBoxHour6);
+            this.panel1.Controls.Add(this.Hour6);
+            this.panel1.Controls.Add(this.pictureBoxHour3);
+            this.panel1.Controls.Add(this.pictureBoxHour0);
+            this.panel1.Controls.Add(this.Hour3);
+            this.panel1.Controls.Add(this.Hour0);
             this.panel1.Location = new System.Drawing.Point(-2, 378);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(854, 140);
             this.panel1.TabIndex = 58;
             this.panel1.Tag = "";
+            // 
+            // HourLabel21
+            // 
+            this.HourLabel21.AutoSize = true;
+            this.HourLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel21.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel21.Location = new System.Drawing.Point(643, 110);
+            this.HourLabel21.Name = "HourLabel21";
+            this.HourLabel21.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel21.TabIndex = 100;
+            this.HourLabel21.Text = "label14";
+            this.HourLabel21.Visible = false;
+            // 
+            // HourLabel18
+            // 
+            this.HourLabel18.AutoSize = true;
+            this.HourLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel18.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel18.Location = new System.Drawing.Point(570, 110);
+            this.HourLabel18.Name = "HourLabel18";
+            this.HourLabel18.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel18.TabIndex = 99;
+            this.HourLabel18.Text = "label15";
+            this.HourLabel18.Visible = false;
+            // 
+            // HourLabel15
+            // 
+            this.HourLabel15.AutoSize = true;
+            this.HourLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel15.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel15.Location = new System.Drawing.Point(493, 110);
+            this.HourLabel15.Name = "HourLabel15";
+            this.HourLabel15.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel15.TabIndex = 98;
+            this.HourLabel15.Text = "label12";
+            this.HourLabel15.Visible = false;
+            // 
+            // HourLabel12
+            // 
+            this.HourLabel12.AutoSize = true;
+            this.HourLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel12.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel12.Location = new System.Drawing.Point(420, 110);
+            this.HourLabel12.Name = "HourLabel12";
+            this.HourLabel12.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel12.TabIndex = 97;
+            this.HourLabel12.Text = "label13";
+            this.HourLabel12.Visible = false;
+            // 
+            // HourLabel9
+            // 
+            this.HourLabel9.AutoSize = true;
+            this.HourLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel9.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel9.Location = new System.Drawing.Point(346, 110);
+            this.HourLabel9.Name = "HourLabel9";
+            this.HourLabel9.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel9.TabIndex = 96;
+            this.HourLabel9.Text = "label10";
+            this.HourLabel9.Visible = false;
+            // 
+            // HourLabel6
+            // 
+            this.HourLabel6.AutoSize = true;
+            this.HourLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel6.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel6.Location = new System.Drawing.Point(274, 110);
+            this.HourLabel6.Name = "HourLabel6";
+            this.HourLabel6.Size = new System.Drawing.Size(50, 13);
+            this.HourLabel6.TabIndex = 95;
+            this.HourLabel6.Text = "label11";
+            this.HourLabel6.Visible = false;
+            // 
+            // HourLabel3
+            // 
+            this.HourLabel3.AutoSize = true;
+            this.HourLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel3.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel3.Location = new System.Drawing.Point(205, 110);
+            this.HourLabel3.Name = "HourLabel3";
+            this.HourLabel3.Size = new System.Drawing.Size(43, 13);
+            this.HourLabel3.TabIndex = 94;
+            this.HourLabel3.Text = "label9";
+            this.HourLabel3.Visible = false;
+            // 
+            // HourLabel0
+            // 
+            this.HourLabel0.AutoSize = true;
+            this.HourLabel0.BackColor = System.Drawing.Color.Transparent;
+            this.HourLabel0.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLabel0.Location = new System.Drawing.Point(131, 110);
+            this.HourLabel0.Name = "HourLabel0";
+            this.HourLabel0.Size = new System.Drawing.Size(43, 13);
+            this.HourLabel0.TabIndex = 93;
+            this.HourLabel0.Text = "label7";
+            this.HourLabel0.Visible = false;
+            this.HourLabel0.Click += new System.EventHandler(this.label7_Click_1);
+            // 
+            // pictureBoxHour21
+            // 
+            this.pictureBoxHour21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour21.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour21.Location = new System.Drawing.Point(648, 59);
+            this.pictureBoxHour21.Name = "pictureBoxHour21";
+            this.pictureBoxHour21.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour21.TabIndex = 92;
+            this.pictureBoxHour21.TabStop = false;
+            this.pictureBoxHour21.Visible = false;
+            // 
+            // Hour21
+            // 
+            this.Hour21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour21.FlatAppearance.BorderSize = 0;
+            this.Hour21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour21.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour21.Location = new System.Drawing.Point(642, 29);
+            this.Hour21.Name = "Hour21";
+            this.Hour21.Size = new System.Drawing.Size(53, 23);
+            this.Hour21.TabIndex = 91;
+            this.Hour21.Text = "21:00";
+            this.Hour21.UseVisualStyleBackColor = false;
+            this.Hour21.Visible = false;
+            // 
+            // pictureBoxHour18
+            // 
+            this.pictureBoxHour18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour18.Location = new System.Drawing.Point(575, 59);
+            this.pictureBoxHour18.Name = "pictureBoxHour18";
+            this.pictureBoxHour18.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour18.TabIndex = 90;
+            this.pictureBoxHour18.TabStop = false;
+            this.pictureBoxHour18.Visible = false;
+            // 
+            // Hour18
+            // 
+            this.Hour18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour18.FlatAppearance.BorderSize = 0;
+            this.Hour18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour18.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour18.Location = new System.Drawing.Point(569, 29);
+            this.Hour18.Name = "Hour18";
+            this.Hour18.Size = new System.Drawing.Size(53, 23);
+            this.Hour18.TabIndex = 89;
+            this.Hour18.Text = "18:00";
+            this.Hour18.UseVisualStyleBackColor = false;
+            this.Hour18.Visible = false;
+            // 
+            // pictureBoxHour15
+            // 
+            this.pictureBoxHour15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour15.Location = new System.Drawing.Point(498, 59);
+            this.pictureBoxHour15.Name = "pictureBoxHour15";
+            this.pictureBoxHour15.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour15.TabIndex = 88;
+            this.pictureBoxHour15.TabStop = false;
+            this.pictureBoxHour15.Visible = false;
+            // 
+            // Hour15
+            // 
+            this.Hour15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour15.FlatAppearance.BorderSize = 0;
+            this.Hour15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour15.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour15.Location = new System.Drawing.Point(492, 29);
+            this.Hour15.Name = "Hour15";
+            this.Hour15.Size = new System.Drawing.Size(53, 23);
+            this.Hour15.TabIndex = 87;
+            this.Hour15.Text = "15:00";
+            this.Hour15.UseVisualStyleBackColor = false;
+            this.Hour15.Visible = false;
+            // 
+            // pictureBoxHour12
+            // 
+            this.pictureBoxHour12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour12.Location = new System.Drawing.Point(425, 59);
+            this.pictureBoxHour12.Name = "pictureBoxHour12";
+            this.pictureBoxHour12.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour12.TabIndex = 86;
+            this.pictureBoxHour12.TabStop = false;
+            this.pictureBoxHour12.Visible = false;
+            // 
+            // Hour12
+            // 
+            this.Hour12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour12.FlatAppearance.BorderSize = 0;
+            this.Hour12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour12.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour12.Location = new System.Drawing.Point(419, 29);
+            this.Hour12.Name = "Hour12";
+            this.Hour12.Size = new System.Drawing.Size(53, 23);
+            this.Hour12.TabIndex = 85;
+            this.Hour12.Text = "12:00";
+            this.Hour12.UseVisualStyleBackColor = false;
+            this.Hour12.Visible = false;
+            // 
+            // pictureBoxHour9
+            // 
+            this.pictureBoxHour9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour9.Location = new System.Drawing.Point(351, 59);
+            this.pictureBoxHour9.Name = "pictureBoxHour9";
+            this.pictureBoxHour9.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour9.TabIndex = 84;
+            this.pictureBoxHour9.TabStop = false;
+            this.pictureBoxHour9.Visible = false;
+            // 
+            // Hour9
+            // 
+            this.Hour9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour9.FlatAppearance.BorderSize = 0;
+            this.Hour9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour9.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour9.Location = new System.Drawing.Point(345, 29);
+            this.Hour9.Name = "Hour9";
+            this.Hour9.Size = new System.Drawing.Size(53, 23);
+            this.Hour9.TabIndex = 83;
+            this.Hour9.Text = "09:00";
+            this.Hour9.UseVisualStyleBackColor = false;
+            this.Hour9.Visible = false;
+            // 
+            // pictureBoxHour6
+            // 
+            this.pictureBoxHour6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour6.Location = new System.Drawing.Point(279, 59);
+            this.pictureBoxHour6.Name = "pictureBoxHour6";
+            this.pictureBoxHour6.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour6.TabIndex = 74;
+            this.pictureBoxHour6.TabStop = false;
+            this.pictureBoxHour6.Visible = false;
+            // 
+            // Hour6
+            // 
+            this.Hour6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour6.FlatAppearance.BorderSize = 0;
+            this.Hour6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour6.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour6.Location = new System.Drawing.Point(273, 29);
+            this.Hour6.Name = "Hour6";
+            this.Hour6.Size = new System.Drawing.Size(53, 23);
+            this.Hour6.TabIndex = 73;
+            this.Hour6.Text = "06:00";
+            this.Hour6.UseVisualStyleBackColor = false;
+            this.Hour6.Visible = false;
+            // 
+            // pictureBoxHour3
+            // 
+            this.pictureBoxHour3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour3.Location = new System.Drawing.Point(206, 59);
+            this.pictureBoxHour3.Name = "pictureBoxHour3";
+            this.pictureBoxHour3.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour3.TabIndex = 72;
+            this.pictureBoxHour3.TabStop = false;
+            this.pictureBoxHour3.Visible = false;
+            // 
+            // pictureBoxHour0
+            // 
+            this.pictureBoxHour0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxHour0.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxHour0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHour0.Location = new System.Drawing.Point(132, 59);
+            this.pictureBoxHour0.Name = "pictureBoxHour0";
+            this.pictureBoxHour0.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxHour0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHour0.TabIndex = 70;
+            this.pictureBoxHour0.TabStop = false;
+            this.pictureBoxHour0.Visible = false;
+            // 
+            // Hour3
+            // 
+            this.Hour3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour3.FlatAppearance.BorderSize = 0;
+            this.Hour3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour3.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour3.Location = new System.Drawing.Point(200, 29);
+            this.Hour3.Name = "Hour3";
+            this.Hour3.Size = new System.Drawing.Size(53, 23);
+            this.Hour3.TabIndex = 71;
+            this.Hour3.Text = "03:00";
+            this.Hour3.UseVisualStyleBackColor = false;
+            this.Hour3.Visible = false;
+            // 
+            // Hour0
+            // 
+            this.Hour0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.Hour0.FlatAppearance.BorderSize = 0;
+            this.Hour0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hour0.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour0.Location = new System.Drawing.Point(126, 29);
+            this.Hour0.Name = "Hour0";
+            this.Hour0.Size = new System.Drawing.Size(53, 23);
+            this.Hour0.TabIndex = 69;
+            this.Hour0.Text = "00:00";
+            this.Hour0.UseVisualStyleBackColor = false;
+            this.Hour0.Visible = false;
+            // 
+            // panelhourly
+            // 
+            this.panelhourly.BackColor = System.Drawing.Color.Transparent;
+            this.panelhourly.BackgroundImage = global::NET_projektas.Properties.Resources.blue_blur;
+            this.panelhourly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelhourly.Controls.Add(this.Temp3);
+            this.panelhourly.Controls.Add(this.pictureBoxThird);
+            this.panelhourly.Controls.Add(this.dayboxThird);
+            this.panelhourly.Controls.Add(this.Temp2);
+            this.panelhourly.Controls.Add(this.pictureBoxSecond);
+            this.panelhourly.Controls.Add(this.dayboxSecond);
+            this.panelhourly.Controls.Add(this.Temp1);
+            this.panelhourly.Controls.Add(this.pictureBoxFirst);
+            this.panelhourly.Controls.Add(this.dayboxFirst);
+            this.panelhourly.Controls.Add(this.button1);
+            this.panelhourly.Controls.Add(this.txtCurrentTemp);
+            this.panelhourly.Controls.Add(this.pictureBox1);
+            this.panelhourly.Location = new System.Drawing.Point(3, 0);
+            this.panelhourly.Name = "panelhourly";
+            this.panelhourly.Size = new System.Drawing.Size(851, 138);
+            this.panelhourly.TabIndex = 69;
+            this.panelhourly.Visible = false;
+            // 
+            // Temp3
+            // 
+            this.Temp3.AutoSize = true;
+            this.Temp3.BackColor = System.Drawing.Color.Transparent;
+            this.Temp3.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Temp3.Location = new System.Drawing.Point(527, 102);
+            this.Temp3.Name = "Temp3";
+            this.Temp3.Size = new System.Drawing.Size(0, 13);
+            this.Temp3.TabIndex = 68;
+            this.Temp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxThird
+            // 
+            this.pictureBoxThird.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxThird.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxThird.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxThird.Location = new System.Drawing.Point(528, 55);
+            this.pictureBoxThird.Name = "pictureBoxThird";
+            this.pictureBoxThird.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxThird.TabIndex = 67;
+            this.pictureBoxThird.TabStop = false;
+            // 
+            // dayboxThird
+            // 
+            this.dayboxThird.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.dayboxThird.FlatAppearance.BorderSize = 0;
+            this.dayboxThird.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dayboxThird.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayboxThird.Location = new System.Drawing.Point(522, 25);
+            this.dayboxThird.Name = "dayboxThird";
+            this.dayboxThird.Size = new System.Drawing.Size(53, 23);
+            this.dayboxThird.TabIndex = 66;
+            this.dayboxThird.UseVisualStyleBackColor = false;
+            this.dayboxThird.Click += new System.EventHandler(this.dayboxThird_Click);
+            // 
+            // Temp2
+            // 
+            this.Temp2.AutoSize = true;
+            this.Temp2.BackColor = System.Drawing.Color.Transparent;
+            this.Temp2.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Temp2.Location = new System.Drawing.Point(454, 101);
+            this.Temp2.Name = "Temp2";
+            this.Temp2.Size = new System.Drawing.Size(0, 13);
+            this.Temp2.TabIndex = 65;
+            this.Temp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxSecond
+            // 
+            this.pictureBoxSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxSecond.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxSecond.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxSecond.Location = new System.Drawing.Point(455, 55);
+            this.pictureBoxSecond.Name = "pictureBoxSecond";
+            this.pictureBoxSecond.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxSecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSecond.TabIndex = 64;
+            this.pictureBoxSecond.TabStop = false;
+            // 
+            // dayboxSecond
+            // 
+            this.dayboxSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.dayboxSecond.FlatAppearance.BorderSize = 0;
+            this.dayboxSecond.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dayboxSecond.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayboxSecond.Location = new System.Drawing.Point(449, 25);
+            this.dayboxSecond.Name = "dayboxSecond";
+            this.dayboxSecond.Size = new System.Drawing.Size(53, 23);
+            this.dayboxSecond.TabIndex = 63;
+            this.dayboxSecond.UseVisualStyleBackColor = false;
+            this.dayboxSecond.Click += new System.EventHandler(this.dayboxSecond_Click);
+            // 
+            // Temp1
+            // 
+            this.Temp1.AutoSize = true;
+            this.Temp1.BackColor = System.Drawing.Color.Transparent;
+            this.Temp1.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Temp1.ForeColor = System.Drawing.Color.Black;
+            this.Temp1.Location = new System.Drawing.Point(380, 101);
+            this.Temp1.Name = "Temp1";
+            this.Temp1.Size = new System.Drawing.Size(0, 13);
+            this.Temp1.TabIndex = 62;
+            this.Temp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Temp1.Click += new System.EventHandler(this.Temp1_Click);
+            // 
+            // pictureBoxFirst
+            // 
+            this.pictureBoxFirst.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxFirst.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxFirst.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFirst.Location = new System.Drawing.Point(381, 55);
+            this.pictureBoxFirst.Name = "pictureBoxFirst";
+            this.pictureBoxFirst.Size = new System.Drawing.Size(41, 43);
+            this.pictureBoxFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFirst.TabIndex = 61;
+            this.pictureBoxFirst.TabStop = false;
+            this.pictureBoxFirst.Click += new System.EventHandler(this.pictureBoxFirst_Click);
+            // 
+            // dayboxFirst
+            // 
+            this.dayboxFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.dayboxFirst.FlatAppearance.BorderSize = 0;
+            this.dayboxFirst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dayboxFirst.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayboxFirst.Location = new System.Drawing.Point(375, 25);
+            this.dayboxFirst.Name = "dayboxFirst";
+            this.dayboxFirst.Size = new System.Drawing.Size(53, 23);
+            this.dayboxFirst.TabIndex = 60;
+            this.dayboxFirst.UseVisualStyleBackColor = false;
+            this.dayboxFirst.Click += new System.EventHandler(this.dayboxFirst_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(41, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 27);
+            this.button1.TabIndex = 59;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // txtCurrentTemp
+            // 
+            this.txtCurrentTemp.AutoSize = true;
+            this.txtCurrentTemp.BackColor = System.Drawing.Color.Transparent;
+            this.txtCurrentTemp.Font = new System.Drawing.Font("Roboto Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentTemp.Location = new System.Drawing.Point(12, 32);
+            this.txtCurrentTemp.Name = "txtCurrentTemp";
+            this.txtCurrentTemp.Size = new System.Drawing.Size(149, 58);
+            this.txtCurrentTemp.TabIndex = 0;
+            this.txtCurrentTemp.Text = "-10°C";
+            this.txtCurrentTemp.Visible = false;
+            this.txtCurrentTemp.Click += new System.EventHandler(this.txtCurrentTemp_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(167, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // windspeed
             // 
@@ -348,9 +906,8 @@
             this.sunrise.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunrise.Location = new System.Drawing.Point(670, 166);
             this.sunrise.Name = "sunrise";
-            this.sunrise.Size = new System.Drawing.Size(37, 13);
+            this.sunrise.Size = new System.Drawing.Size(0, 13);
             this.sunrise.TabIndex = 74;
-            this.sunrise.Text = "Rise:";
             this.sunrise.Visible = false;
             // 
             // sunset
@@ -360,9 +917,8 @@
             this.sunset.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunset.Location = new System.Drawing.Point(670, 205);
             this.sunset.Name = "sunset";
-            this.sunset.Size = new System.Drawing.Size(37, 13);
+            this.sunset.Size = new System.Drawing.Size(0, 13);
             this.sunset.TabIndex = 75;
-            this.sunset.Text = "Rise:";
             this.sunset.Visible = false;
             // 
             // moonrise
@@ -372,9 +928,8 @@
             this.moonrise.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moonrise.Location = new System.Drawing.Point(768, 166);
             this.moonrise.Name = "moonrise";
-            this.moonrise.Size = new System.Drawing.Size(37, 13);
+            this.moonrise.Size = new System.Drawing.Size(0, 13);
             this.moonrise.TabIndex = 76;
-            this.moonrise.Text = "Rise:";
             this.moonrise.Visible = false;
             // 
             // moonset
@@ -384,9 +939,8 @@
             this.moonset.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moonset.Location = new System.Drawing.Point(768, 205);
             this.moonset.Name = "moonset";
-            this.moonset.Size = new System.Drawing.Size(37, 13);
+            this.moonset.Size = new System.Drawing.Size(0, 13);
             this.moonset.TabIndex = 77;
-            this.moonset.Text = "Rise:";
             this.moonset.Visible = false;
             // 
             // button3
@@ -426,211 +980,6 @@
             this.button5.Text = "Hourly";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(167, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtCurrentTemp
-            // 
-            this.txtCurrentTemp.AutoSize = true;
-            this.txtCurrentTemp.BackColor = System.Drawing.Color.Transparent;
-            this.txtCurrentTemp.Font = new System.Drawing.Font("Roboto Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentTemp.Location = new System.Drawing.Point(12, 32);
-            this.txtCurrentTemp.Name = "txtCurrentTemp";
-            this.txtCurrentTemp.Size = new System.Drawing.Size(149, 58);
-            this.txtCurrentTemp.TabIndex = 0;
-            this.txtCurrentTemp.Text = "-10°C";
-            this.txtCurrentTemp.Visible = false;
-            this.txtCurrentTemp.Click += new System.EventHandler(this.txtCurrentTemp_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(41, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 27);
-            this.button1.TabIndex = 59;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // dayboxFirst
-            // 
-            this.dayboxFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
-            this.dayboxFirst.FlatAppearance.BorderSize = 0;
-            this.dayboxFirst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dayboxFirst.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayboxFirst.Location = new System.Drawing.Point(375, 25);
-            this.dayboxFirst.Name = "dayboxFirst";
-            this.dayboxFirst.Size = new System.Drawing.Size(53, 23);
-            this.dayboxFirst.TabIndex = 60;
-            this.dayboxFirst.UseVisualStyleBackColor = false;
-            this.dayboxFirst.Click += new System.EventHandler(this.dayboxFirst_Click);
-            // 
-            // pictureBoxFirst
-            // 
-            this.pictureBoxFirst.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxFirst.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxFirst.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxFirst.Location = new System.Drawing.Point(381, 55);
-            this.pictureBoxFirst.Name = "pictureBoxFirst";
-            this.pictureBoxFirst.Size = new System.Drawing.Size(41, 43);
-            this.pictureBoxFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxFirst.TabIndex = 61;
-            this.pictureBoxFirst.TabStop = false;
-            this.pictureBoxFirst.Click += new System.EventHandler(this.pictureBoxFirst_Click);
-            // 
-            // Temp1
-            // 
-            this.Temp1.AutoSize = true;
-            this.Temp1.BackColor = System.Drawing.Color.Transparent;
-            this.Temp1.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Temp1.ForeColor = System.Drawing.Color.Black;
-            this.Temp1.Location = new System.Drawing.Point(380, 101);
-            this.Temp1.Name = "Temp1";
-            this.Temp1.Size = new System.Drawing.Size(0, 13);
-            this.Temp1.TabIndex = 62;
-            this.Temp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Temp1.Click += new System.EventHandler(this.Temp1_Click);
-            // 
-            // dayboxSecond
-            // 
-            this.dayboxSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
-            this.dayboxSecond.FlatAppearance.BorderSize = 0;
-            this.dayboxSecond.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dayboxSecond.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayboxSecond.Location = new System.Drawing.Point(449, 25);
-            this.dayboxSecond.Name = "dayboxSecond";
-            this.dayboxSecond.Size = new System.Drawing.Size(53, 23);
-            this.dayboxSecond.TabIndex = 63;
-            this.dayboxSecond.UseVisualStyleBackColor = false;
-            this.dayboxSecond.Click += new System.EventHandler(this.dayboxSecond_Click);
-            // 
-            // pictureBoxSecond
-            // 
-            this.pictureBoxSecond.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxSecond.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxSecond.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSecond.Location = new System.Drawing.Point(455, 55);
-            this.pictureBoxSecond.Name = "pictureBoxSecond";
-            this.pictureBoxSecond.Size = new System.Drawing.Size(41, 43);
-            this.pictureBoxSecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSecond.TabIndex = 64;
-            this.pictureBoxSecond.TabStop = false;
-            // 
-            // Temp2
-            // 
-            this.Temp2.AutoSize = true;
-            this.Temp2.BackColor = System.Drawing.Color.Transparent;
-            this.Temp2.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Temp2.Location = new System.Drawing.Point(454, 101);
-            this.Temp2.Name = "Temp2";
-            this.Temp2.Size = new System.Drawing.Size(0, 13);
-            this.Temp2.TabIndex = 65;
-            this.Temp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dayboxThird
-            // 
-            this.dayboxThird.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(215)))));
-            this.dayboxThird.FlatAppearance.BorderSize = 0;
-            this.dayboxThird.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dayboxThird.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayboxThird.Location = new System.Drawing.Point(522, 25);
-            this.dayboxThird.Name = "dayboxThird";
-            this.dayboxThird.Size = new System.Drawing.Size(53, 23);
-            this.dayboxThird.TabIndex = 66;
-            this.dayboxThird.UseVisualStyleBackColor = false;
-            this.dayboxThird.Click += new System.EventHandler(this.dayboxThird_Click);
-            // 
-            // pictureBoxThird
-            // 
-            this.pictureBoxThird.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxThird.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxThird.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxThird.Location = new System.Drawing.Point(528, 55);
-            this.pictureBoxThird.Name = "pictureBoxThird";
-            this.pictureBoxThird.Size = new System.Drawing.Size(41, 43);
-            this.pictureBoxThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxThird.TabIndex = 67;
-            this.pictureBoxThird.TabStop = false;
-            // 
-            // Temp3
-            // 
-            this.Temp3.AutoSize = true;
-            this.Temp3.BackColor = System.Drawing.Color.Transparent;
-            this.Temp3.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Temp3.Location = new System.Drawing.Point(527, 102);
-            this.Temp3.Name = "Temp3";
-            this.Temp3.Size = new System.Drawing.Size(0, 13);
-            this.Temp3.TabIndex = 68;
-            this.Temp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelhourly
-            // 
-            this.panelhourly.BackColor = System.Drawing.Color.Transparent;
-            this.panelhourly.BackgroundImage = global::NET_projektas.Properties.Resources.blue_blur;
-            this.panelhourly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelhourly.Controls.Add(this.Temp3);
-            this.panelhourly.Controls.Add(this.pictureBoxThird);
-            this.panelhourly.Controls.Add(this.dayboxThird);
-            this.panelhourly.Controls.Add(this.Temp2);
-            this.panelhourly.Controls.Add(this.pictureBoxSecond);
-            this.panelhourly.Controls.Add(this.dayboxSecond);
-            this.panelhourly.Controls.Add(this.Temp1);
-            this.panelhourly.Controls.Add(this.pictureBoxFirst);
-            this.panelhourly.Controls.Add(this.dayboxFirst);
-            this.panelhourly.Controls.Add(this.button1);
-            this.panelhourly.Controls.Add(this.txtCurrentTemp);
-            this.panelhourly.Controls.Add(this.pictureBox1);
-            this.panelhourly.Location = new System.Drawing.Point(3, 0);
-            this.panelhourly.Name = "panelhourly";
-            this.panelhourly.Size = new System.Drawing.Size(851, 138);
-            this.panelhourly.TabIndex = 69;
-            this.panelhourly.Visible = false;
-            // 
-            // tempreturebutton
-            // 
-            this.tempreturebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(215)))));
-            this.tempreturebutton.FlatAppearance.BorderSize = 0;
-            this.tempreturebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tempreturebutton.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tempreturebutton.Location = new System.Drawing.Point(710, 0);
-            this.tempreturebutton.Name = "tempreturebutton";
-            this.tempreturebutton.Size = new System.Drawing.Size(142, 30);
-            this.tempreturebutton.TabIndex = 81;
-            this.tempreturebutton.Text = "Temperature";
-            this.tempreturebutton.UseVisualStyleBackColor = false;
-            this.tempreturebutton.Visible = false;
-            // 
-            // percipitationbutton
-            // 
-            this.percipitationbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(215)))));
-            this.percipitationbutton.FlatAppearance.BorderSize = 0;
-            this.percipitationbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percipitationbutton.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.percipitationbutton.Location = new System.Drawing.Point(567, 0);
-            this.percipitationbutton.Name = "percipitationbutton";
-            this.percipitationbutton.Size = new System.Drawing.Size(142, 30);
-            this.percipitationbutton.TabIndex = 82;
-            this.percipitationbutton.Text = "Percipitation";
-            this.percipitationbutton.UseVisualStyleBackColor = false;
-            this.percipitationbutton.Visible = false;
             // 
             // Form1
             // 
@@ -673,15 +1022,24 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHour0)).EndInit();
+            this.panelhourly.ResumeLayout(false);
+            this.panelhourly.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThird)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSecond)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.forecastdaypicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirst)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSecond)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThird)).EndInit();
-            this.panelhourly.ResumeLayout(false);
-            this.panelhourly.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,8 +1090,30 @@
         private System.Windows.Forms.PictureBox pictureBoxThird;
         private System.Windows.Forms.Label Temp3;
         private System.Windows.Forms.Panel panelhourly;
-        private System.Windows.Forms.Button percipitationbutton;
-        private System.Windows.Forms.Button tempreturebutton;
+        private System.Windows.Forms.PictureBox pictureBoxHour21;
+        private System.Windows.Forms.Button Hour21;
+        private System.Windows.Forms.PictureBox pictureBoxHour18;
+        private System.Windows.Forms.Button Hour18;
+        private System.Windows.Forms.PictureBox pictureBoxHour15;
+        private System.Windows.Forms.Button Hour15;
+        private System.Windows.Forms.PictureBox pictureBoxHour12;
+        private System.Windows.Forms.Button Hour12;
+        private System.Windows.Forms.PictureBox pictureBoxHour9;
+        private System.Windows.Forms.Button Hour9;
+        private System.Windows.Forms.PictureBox pictureBoxHour6;
+        private System.Windows.Forms.Button Hour6;
+        private System.Windows.Forms.PictureBox pictureBoxHour3;
+        private System.Windows.Forms.PictureBox pictureBoxHour0;
+        private System.Windows.Forms.Button Hour3;
+        private System.Windows.Forms.Button Hour0;
+        private System.Windows.Forms.Label HourLabel3;
+        private System.Windows.Forms.Label HourLabel0;
+        private System.Windows.Forms.Label HourLabel21;
+        private System.Windows.Forms.Label HourLabel18;
+        private System.Windows.Forms.Label HourLabel15;
+        private System.Windows.Forms.Label HourLabel12;
+        private System.Windows.Forms.Label HourLabel9;
+        private System.Windows.Forms.Label HourLabel6;
     }
 }
 
