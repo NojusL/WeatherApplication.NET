@@ -14,16 +14,14 @@ namespace Provider
     public interface WeatherApiProvider
     {
         string GetCurrentXML(string city);
-        Bitmap GetCurrentIcon(string city); 
+        Bitmap GetCurrentIcon(string city);
         string GetCityCountry(string city);
         string GetCurrentDay(string city);
 
-        List<string> GetForecastXML(string city, string parameter);
-
         List<string> GetForecastDays(string city);
 
-        List<Bitmap> GetForecastIcon(string city);
-
+        List<Bitmap> GetForecastIcon();
+       
         List<string> GetForecastTemp(string city, string apiParameter);
 
         string GetSelectedForecast(string city, int dayparameter, string apiParameter);
@@ -32,16 +30,21 @@ namespace Provider
 
         List<String> GetSuggestedCityCollection(string city);
 
+        
     }
 
     public class Provider : WeatherApiProvider
     {
         private const string apikey = "34c5743e734243d99c5230222211601";
+        public string currenttempretaru = "";
+        public XDocument currentforecastXMLDocument;
+        public XDocument forecastXMLDocument;
+        public List<string> Hourlyparameterresponse = new List<string>();
 
-        public String GetCurrentXML(string city, string parameter)
+        public void GetCurrentXML(string city)
         {
             string uri = string.Format("http://api.weatherapi.com/v1/current.xml?key=" + apikey + "&q=" + city);
-            string parameterresponse = null;
+
             using (HttpClient client = new HttpClient())
             {
 
@@ -49,21 +52,17 @@ namespace Provider
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    XDocument xdoc = XDocument.Parse(response.Content.ReadAsStringAsync().Result);
-
-                    string currenttempResponse = (string)xdoc.Descendants(parameter).FirstOrDefault();
-
-                    parameterresponse = currenttempResponse;
+                    XDocument xDocument = XDocument.Parse(response.Content.ReadAsStringAsync().Result);
+                    currentforecastXMLDocument = xDocument;
                 }
 
             }
-            
-            return parameterresponse;
+
 
 
         }
 
-        public List<string> GetForecastXML(string city, string parameter)
+        public void GetForecastXML(string city)
         {
             string uri = string.Format("http://api.weatherapi.com/v1/forecast.xml?key=" + apikey + "&q=" + city + "&days=3");
             List<string> parameterresponse = new List<string>();
@@ -76,19 +75,12 @@ namespace Provider
                 {
                     XDocument xdoc = XDocument.Parse(response.Content.ReadAsStringAsync().Result);
 
-                    foreach (var npc in xdoc.Descendants("forecastday"))
-                    {
-                        string currenttempResponse = (string)npc.Descendants(parameter).FirstOrDefault();
-                        parameterresponse.Add(currenttempResponse);
-                    }
+                    forecastXMLDocument = xdoc;
 
                 }
-
-                return parameterresponse;
-
-
             }
         }
+
 
         public List<String> GetSuggestedCityCollection(string city)
         {
@@ -120,7 +112,7 @@ namespace Provider
 
         public Bitmap GetCurrentIcon(string city)
         {
-            string currenticonUri = GetCurrentXML(city, "icon");
+            string currenticonUri = (string)currentforecastXMLDocument.Descendants("icon").FirstOrDefault();
 
             WebClient client = new WebClient();
 
@@ -135,9 +127,15 @@ namespace Provider
             return icon;
         }
 
-        public List<Bitmap> GetForecastIcon(string city)
+        public List<Bitmap> GetForecastIcon()
         {
-            List <string> currenticonUri = GetForecastXML(city, "icon");
+            List<string> parameterrespose = new List<string>();
+            foreach (var npc in forecastXMLDocument.Descendants("forecastday"))
+            {
+                string currenttempResponse = (string)npc.Descendants("icon").FirstOrDefault();
+                parameterrespose.Add(currenttempResponse);
+            }
+            List<string> currenticonUri = parameterrespose;
 
             List<Bitmap> iconsList = new List<Bitmap>();
 
@@ -158,9 +156,31 @@ namespace Provider
             return iconsList;
         }
 
-        public Bitmap GetSelectedForecastIcon(string city, int dayparameter)
+        public List<Bitmap> GetHourlyIcon()
         {
-            List<Bitmap> selectedIconList = GetForecastIcon(city);
+
+            List<Bitmap> iconsList = new List<Bitmap>();
+
+            foreach (string iconvalue in Hourlyparameterresponse)
+            {
+                WebClient client = new WebClient();
+
+                byte[] image = client.DownloadData("http:" + iconvalue);
+
+                MemoryStream stream = new MemoryStream(image);
+
+                Bitmap newBitMap = new Bitmap(stream);
+
+                Bitmap icon = newBitMap;
+
+                iconsList.Add(icon);
+            }
+            return iconsList;
+        }
+
+        public Bitmap GetSelectedForecastIcon(int dayparameter)
+        {
+            List<Bitmap> selectedIconList = GetForecastIcon();
             Bitmap selectedIcon = selectedIconList[dayparameter];
 
             return selectedIcon;
@@ -168,8 +188,9 @@ namespace Provider
 
         public String GetCityCountry(string city)
         {
-            string currentCity = GetCurrentXML(city, "name");
-            string currentCountry = GetCurrentXML(city, "country");
+
+            string currentCity =  (string)currentforecastXMLDocument.Descendants("name").FirstOrDefault();
+            string currentCountry = (string)currentforecastXMLDocument.Descendants("country").FirstOrDefault();
             string result = currentCity + ", " + currentCountry;
 
             return result;
@@ -177,7 +198,8 @@ namespace Provider
 
         public String GetCurrentDay(string city)
         {
-            string localtime = GetCurrentXML(city, "localtime");
+            
+            string localtime = (string)currentforecastXMLDocument.Descendants("localtime").FirstOrDefault();
 
             string[] vs1 = localtime.Split(' ');
             string[] vs = vs1[0].Split('-');
@@ -194,7 +216,13 @@ namespace Provider
         public List<string> GetForecastDays(string city)
         {
             List<string> parameterresponse = new List<string>();
-            parameterresponse = GetForecastXML(city, "date");
+
+            List<string> parameterrespose = new List<string>();
+            foreach (var npc in forecastXMLDocument.Descendants("forecastday"))
+            {
+                string currenttempResponse = (string)npc.Descendants("date").FirstOrDefault();
+                parameterresponse.Add(currenttempResponse);
+            }
             List<string> formatteddays = new List<string>();
             foreach (string dayvalue in parameterresponse)
             {
@@ -211,13 +239,50 @@ namespace Provider
         }
         public List<string> GetForecastTemp(string city, string apiParameter)
         {
-            List<string> parameterresponse = GetForecastXML(city, apiParameter);
+           
+            List<string> parameterrespose = new List<string>();
+            foreach (var npc in forecastXMLDocument.Descendants("forecastday"))
+            {
+                string currenttempResponse = (string)npc.Descendants(apiParameter).FirstOrDefault();
+                parameterrespose.Add(currenttempResponse);
+            }
             List<string> daysTemp = new List<string>();
-            foreach (string daytemp in parameterresponse)
+            foreach (string daytemp in parameterrespose)
             {
                 daysTemp.Add(daytemp);
             }
             return daysTemp;
+        }
+
+        public List<string> GetHourlyResults( string apiParameter, int day)
+        {
+            Hourlyparameterresponse.Clear();
+
+            int dayswitch = 0;
+            int hourswitch = 3;
+            foreach (var npc in forecastXMLDocument.Descendants("forecastday"))
+            {
+                if(day != dayswitch)
+                {
+                    dayswitch++;
+                    continue;
+                    
+                }
+                        foreach (var tparameter in npc.Descendants("hour"))
+                        {
+                                if(hourswitch == 3)
+                                { 
+                                Hourlyparameterresponse.Add((string)tparameter.Descendants(apiParameter).FirstOrDefault());
+                                hourswitch = 0;
+                                }
+                    hourswitch++;
+
+                }
+
+            }
+
+
+            return Hourlyparameterresponse;
         }
 
         public string GetSelectedForecast(string city, int dayparameter, string apiParameter)
@@ -229,9 +294,9 @@ namespace Provider
 
         public string GetCurrentForecast(string city, string apiParameter)
         {
-            string currentforecastresult = GetCurrentXML(city, apiParameter);
-             
-            return currentforecastresult;
+            string currenttempResponse = (string)currentforecastXMLDocument.Descendants(apiParameter).FirstOrDefault();
+
+            return currenttempResponse;
         }
 
 
