@@ -84,15 +84,7 @@ namespace Provider
         {
             string currenticonUri = (string)currentforecastXMLDocument.Descendants("icon").FirstOrDefault();
 
-            WebClient client = new WebClient();
-
-            byte[] image = client.DownloadData("http:" + currenticonUri);
-
-            MemoryStream stream = new MemoryStream(image);
-
-            Bitmap newBitMap = new Bitmap(stream);
-
-            Bitmap icon = newBitMap;
+            Bitmap icon = GetIconFromWeb(currenticonUri);
 
             return icon;
         }
@@ -111,17 +103,7 @@ namespace Provider
 
             foreach (string iconvalue in currenticonUri)
             {
-                WebClient client = new WebClient();
-
-                byte[] image = client.DownloadData("http:" + iconvalue);
-
-                MemoryStream stream = new MemoryStream(image);
-
-                Bitmap newBitMap = new Bitmap(stream);
-
-                Bitmap icon = newBitMap;
-
-                iconsList.Add(icon);
+                iconsList.Add(GetIconFromWeb(iconvalue));
             }
             return iconsList;
         }
@@ -133,19 +115,25 @@ namespace Provider
 
             foreach (string iconvalue in Hourlyparameterresponse)
             {
-                WebClient client = new WebClient();
-
-                byte[] image = client.DownloadData("http:" + iconvalue);
-
-                MemoryStream stream = new MemoryStream(image);
-
-                Bitmap newBitMap = new Bitmap(stream);
-
-                Bitmap icon = newBitMap;
-
-                iconsList.Add(icon);
+                iconsList.Add(GetIconFromWeb(iconvalue));
             }
             return iconsList;
+        }
+
+        public Bitmap GetIconFromWeb(string iconlink)
+        {
+            WebClient client = new WebClient();
+
+            byte[] image = client.DownloadData("http:" + iconlink);
+
+            MemoryStream stream = new MemoryStream(image);
+
+            Bitmap newBitMap = new Bitmap(stream);
+
+            Bitmap icon = newBitMap;
+
+            return icon;
+
         }
 
         public Bitmap GetSelectedForecastIcon(int dayparameter)
